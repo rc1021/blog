@@ -99,7 +99,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/rc1021/blog/content"
+    URL: "https://github.com/rc1021/blog/blob/main/content"
     Text: "編輯" # edit text
     appendFilePath: true # to append file path to Edit link
 
