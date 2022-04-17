@@ -13,6 +13,6 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-draft: false
+draft: true
 ---
 
