@@ -117,7 +117,7 @@ menu:
   main:
     - identifier: gather
       name: Gather虛擬辦公室
-      url: https://app.gather.town/invite?token=vYH2DbvONtaAoTCRV4d5PBrCUQZuMBC-
+      url: https://app.gather.town/invite?token=Girpjb56vIZEZIE3YWlHeUpzl335uOyO
       weight: 1
     # - identifier: categories
     #   name: 目錄
