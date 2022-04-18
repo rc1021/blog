@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 tags: []
-draft: false
+draft: true
 showToc: true
 TocOpen: true
 hidemeta: false
@@ -13,6 +13,5 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-draft: true
 ---
 

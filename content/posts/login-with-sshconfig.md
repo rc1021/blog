@@ -13,7 +13,6 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-draft: false
 ---
 
 如果你經常通過 SSH 連接到多個遠程系統，你會發現記住所有遠程 IP 地址、不同的用戶名、非標準端口和各種命令行選項是很困難的，如果可以的話，通常會配置 `SSH config` 記住這些資訊。

@@ -13,7 +13,6 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-draft: false
 ---
 
 如果你需要將檔案或目錄從本地上傳到遠程伺服器，或從遠程下載資料到本地電腦，可以使用 `scp` 達成。
