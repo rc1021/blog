@@ -32,7 +32,10 @@ draft: false
 - 目標庫：呈現站台的內容，這裡是指 `{username}.github.io` 專案
 - 來源庫：這裡是指管理 Hugo 的專案，使用 `hugo new site blog` [參考手冊](https://gohugo.io/getting-started/quick-start/)
 
-以我的站台來說 1.目標庫是 [`rc1021/rc1021.github.io`](https://github.com/rc1021/rc1021.github.io)；2.來源庫是 [`rc1021/blog`](https://github.com/rc1021/blog)
+以我的站台來說 
+
+- 目標庫是 [`rc1021/rc1021.github.io`](https://github.com/rc1021/rc1021.github.io)
+- 來源庫是 [`rc1021/blog`](https://github.com/rc1021/blog)
 
 你應該也擁有這樣兩個庫
 
@@ -43,6 +46,8 @@ draft: false
 ```
 $ ssh-keygen -t rsa -b 4096 -C "{username}@users.noreply.github.com" -f ~/.ssh/noreply
 ```
+
+- 請將 {username} 改為你的帳戶名稱
 
 你將會得到 `noreply.pub` 和 `noreply` 兩個檔案
 
@@ -55,7 +60,7 @@ $ ssh-keygen -t rsa -b 4096 -C "{username}@users.noreply.github.com" -f ~/.ssh/n
     $ cat ~/.ssh/noreply.pub
     // ssh-rsa AAAAB3Nz.......@users.noreply.github.com
     ```
-2. 在你的目標庫下，點擊Settings {{ $image := .Resources.GetMatch "1650251777396.jpg" }}
+2. 在你的目標庫下，點擊Settings ![Settings1](1650251777396.jpg)
 3. 在左側邊欄中，點擊Deploy keys
 4. 點擊 Add deploy key
 5. 在 Key 欄位貼上 noreply.pub 的內容
@@ -64,7 +69,7 @@ $ ssh-keygen -t rsa -b 4096 -C "{username}@users.noreply.github.com" -f ~/.ssh/n
 
 最終你會得到這樣的結果
 
- {{ $image := .Resources.GetMatch "1650253565960.jpg" }}
+![Result1](1650253565960.jpg)
 
 ## 安裝私鑰至來源庫
 
@@ -77,7 +82,7 @@ $ ssh-keygen -t rsa -b 4096 -C "{username}@users.noreply.github.com" -f ~/.ssh/n
     // ........
     // -----END OPENSSH PRIVATE KEY-----
     ```
-2. 在你的來源庫下，點擊Settings {{ $image := .Resources.GetMatch "1650251777396.jpg" }}
+2. 在你的來源庫下，點擊Settings ![Settings](1650251777396.jpg)
 3. 在左側邊欄中，點擊 Secrets 再點擊 Actions
 4. 點擊 New repository secret
 5. 在 Name 欄位輸入 `DEPLOY_KEY` (必須是這個值)
@@ -86,13 +91,13 @@ $ ssh-keygen -t rsa -b 4096 -C "{username}@users.noreply.github.com" -f ~/.ssh/n
 
 最終你會得到這樣的結果
 
- {{ $image := .Resources.GetMatch "1650253654099.jpg" }}
+ ![安裝私鑰至來源庫](1650253654099.jpg)
 
 ## 創建 Git Action
 
 使用 Git Actions 偵測每當 main branch 更新時自動佈署到目標庫
 
-在你的來源庫下，點擊Actions 再點擊 `set up a workflow yourself` (實際上它就是在你的來源庫創建一個yaml檔) {{ $image := .Resources.GetMatch "1650254142113.jpg" }}
+在你的來源庫下，點擊Actions 再點擊 `set up a workflow yourself` (實際上它就是在你的來源庫創建一個yaml檔)  ![Actions](1650254142113.jpg)
 
 在 `Edit new file` 裡輸入以下內容
 
@@ -120,11 +125,9 @@ build:
 
 然後點擊右上角 `Start commit` 就會開始執行第一次佈署
 
- {{ $image := .Resources.GetMatch "1650255112373.jpg" }}
+![Result](1650255112373.jpg)
 
-這就是所有過程了，如果還有不了解的地方，你可以點擊右上角 `Gather虛擬辦公室` 試著找到我
-
-恭喜你又學會了一件事
+這就是所有過程了，如果還有不了解的地方，你可以點擊右上角 `Gather虛擬辦公室` 試著找到我，恭喜你又學會了一件事
 
 ## 聽說：小故事大道理
 
