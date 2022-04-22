@@ -103,19 +103,21 @@ $ ssh-keygen -t rsa -b 4096 -C "{username}@users.noreply.github.com" -f ~/.ssh/n
 
 ```
 name: build
+
 on:
-push:
+  push:
     branches: [ main ]
+
 jobs:
-build:
+  build:
     runs-on: ubuntu-latest
 
     steps:
     - name: 'Building...'
-    uses: reuixiy/hugo-deploy@v1
-    env:
-        DEPLOY_REPO: {username}/{username}.github.io
-        DEPLOY_BRANCH: {branch name}
+      uses: reuixiy/hugo-deploy@v1
+      env:
+        DEPLOY_REPO: rc1021/rc1021.github.io
+        DEPLOY_BRANCH: main
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         TZ: Asia/Taipei
 ```
