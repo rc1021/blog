@@ -24,3 +24,22 @@ ShowPostNavLinks: true
 ```
 $ git reset --hard <commit-hash>
 ```
+
+## 新增指令別名
+
+有時指定參數很長，你可以用 alias 設定指令別名
+
+```
+$ git config --global alias.log-graph 'log --graph --all --decorate --oneline'
+
+$ git log-graph
+* 4b35929 (HEAD -> main, origin/main, origin/HEAD) 新增文章：Git常用指令集
+* 6f207d9 update
+* 3186a5b 新增Gather頁面
+*   136775a Merge branch 'main' of github.com:rc1021/blog into main
+|\
+| * aef5629 更新文章內容
+* | 90d614d 新增文章：免密碼登入遠程主機(SSH copy id)
+|/
+*   0565d3d Merge branch 'main' of github.com:rc1021/blog into main
+```
