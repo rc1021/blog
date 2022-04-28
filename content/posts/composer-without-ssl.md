@@ -37,7 +37,7 @@ $ composer config --global repo.packagist composer http://packagist.org
 
 ---
 
-聽說：小故事大道理
+## 聽說：小故事大道理
 
 有破釜沈舟死戰的決心，不等於去冒險。冒險是一件容易的事情，你把錢都壓到賭場上就是冒險，但是冒險和成功沒有必然的聯繫。
 

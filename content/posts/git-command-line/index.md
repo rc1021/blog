@@ -43,3 +43,21 @@ $ git log-graph
 |/
 *   0565d3d Merge branch 'main' of github.com:rc1021/blog into main
 ```
+
+## 從目前分支建立新分支
+
+使用 `git checkout -b [new_branch_name]` 建立分支
+
+```
+[master]$ git checkout -b main
+Switched to a new branch 'main'
+[main]$ 
+```
+
+---
+
+## 聽說：劃線筆記
+
+來源 吳軍。硅谷來信3。第23封信：為什麼不能作弊?
+
+人的一輩子是靠一點點努力，試錯，糾偏，然後才可能得到真實的答案。在這個過程中，人的本事才可能提高。我們一輩子遇到的很多事情，是沒有一個現成答案的，需要我們自己去找到答案。
